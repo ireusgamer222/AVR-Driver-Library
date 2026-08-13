@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="assets/iti-logo.png" alt="Information Technology Institute (ITI) logo" width="220">
+  <img src="assets/iti-logo.png" alt="Information Technology Institute (ITI) logo" width="180">
 </p>
+<p align="center"><sub>Built during the ITI Embedded Systems Track</sub></p>
 
 # AVR Driver Library
 
@@ -145,4 +146,3 @@ MIT — see [LICENSE](LICENSE). Use any part of this, in full or in pieces, for 
 **Scope, on purpose:** this module is kept exactly as it was when it served its purpose — it isn't wired into this repo's current `TIMER0_CONFIG.h` (Timer0 is configured for a different job elsewhere in this library) and it isn't a hardened, production scheduler. Most notably, tasks run directly inside the ISR rather than being dispatched from the main loop — the simpler, more naive version of a time-triggered cooperative scheduler, before splitting "tick" from "dispatch" the way a proper implementation (or FreeRTOS itself) does. That gap is intentional to leave visible: it's a big part of *why* this was worth writing by hand first.
 
 If you're digging into this repo to learn from it rather than build on it, this folder is a good place to see a scheduler's core mechanism stripped down to its simplest possible form.
-
