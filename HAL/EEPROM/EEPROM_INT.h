@@ -28,19 +28,8 @@ void EEPROM_voidInit(void);
 EEPROM_ErrorType EEPROM_uddtWriteByte(u16 Copy_u16Address, uint8_t Copy_u8Data);
 EEPROM_ErrorType EEPROM_uddtReadByte(u16 Copy_u16Address, uint8_t *Copy_pu8Data);
 
-EEPROM_ErrorType EEPROM_uddtWriteString(u16 Copy_u16Address, uint8_t *Copy_pu8String);
-EEPROM_ErrorType EEPROM_uddtReadString(u16 Copy_u16Address, uint8_t *Copy_pu8String);
-
-EEPROM_ErrorType EEPROM_uddtWritePage(u16 Copy_u16Address, uint8_t Copy_pu8Data, uint8_t Copy_u8Length);
-EEPROM_ErrorType EEPROM_uddtReadPage(u16 Copy_u16Address, uint8_t *Copy_pu8Data, uint8_t Copy_u8Length);
-
-EEPROM_ErrorType EEPROM_uddtUpdateByte(u16 Copy_u16Address, uint8_t Copy_u8Data);
-EEPROM_ErrorType EEPROM_uddtDeleteByte(u16 Copy_u16Address);
 EEPROM_ErrorType EEPROM_uddtEraseEEPROM(void);
 
-EEPROM_ErrorType EEPROM_uddtManagerInit(void);
-EEPROM_ErrorType EEPROM_uddtManagerReader(void);
-EEPROM_ErrorType EEPROM_uddtManagerSaveName(uint8_t *Copy_pu8Name);
-EEPROM_ErrorType EEPROM_uddtManagerReadName(uint8_t Copy_u8Index, uint8_t *Copy_pu8String);
+
 
 #endif /* HAL_EEPROM_EEPROM_INT_H_ */
