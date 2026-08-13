@@ -1,0 +1,17 @@
+# Eclipse / AVR project artifacts
+Debug/
+Release/
+.settings/
+.project
+.cproject
+
+# Build outputs
+*.o
+*.elf
+*.hex
+*.map
+*.eep
+
+# OS cruft
+.DS_Store
+Thumbs.db
