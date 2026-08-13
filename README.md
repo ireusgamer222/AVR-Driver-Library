@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="assets/iti-logo.png" alt="Information Technology Institute (ITI) logo" width="180">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/iti-logo-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/iti-logo-light.png">
+    <img src="assets/iti-logo-light.png" alt="Information Technology Institute (ITI) logo" width="180">
+  </picture>
 </p>
 <p align="center"><sub>Built during the ITI Embedded Systems Track</sub></p>
 
