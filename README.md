@@ -74,7 +74,7 @@ This library doesn't include an application layer — it's intentionally kept as
 | Module | Covers | Key API surface |
 |---|---|---|
 | **LCD** | Character LCD control | `LCD_voidInit`, `LCD_voidClearScreen`, `LCD_voidGoToPosition`, `LCD_voidSendChar/String/Number` |
-| **EEPROM** | External I²C EEPROM | Byte/string/page-level read & write, `EEPROM_uddtUpdateByte`, `EEPROM_uddtDeleteByte`, `EEPROM_uddtEraseEEPROM`, plus a simple name-manager layer (`EEPROM_uddtManagerInit/SaveName/ReadName`) for indexed record storage |
+| **EEPROM** | External I²C EEPROM — deliberately kept minimal | `EEPROM_voidInit`, `EEPROM_uddtWriteByte`, `EEPROM_uddtReadByte`, `EEPROM_uddtEraseEEPROM` |
 | **SERVO_MOTOR** | PWM angle control | `SERVO_voidInit`, `SERVO_voidSetAngle` |
 | **KEYPAD** | Matrix keypad scanning | `KEYPAD_voidInit`, `KEYPAD_getPressedKey` |
 | **STEPPER_MOTOR** | Step/direction control | `STEPPER_voidInit`, `STEPPER_voidRotate`, `STEPPER_voidStop` |
