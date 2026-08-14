@@ -9,7 +9,7 @@
 
 # AVR Driver Library
 
-A layered library of **MCAL** (Microcontroller Abstraction Layer) and **HAL** (Hardware Abstraction Layer) drivers for the **ATmega32** microcontroller, written in C. It was built during an embedded systems training program (ITI AVR track) and later became the driver foundation for a full graduation project — a [fingerprint-based biometric access control system](#).
+A layered library of **MCAL** (Microcontroller Abstraction Layer) and **HAL** (Hardware Abstraction Layer) drivers for the **ATmega32** microcontroller, written in C. It was built during an embedded systems training program (ITI AVR track) and later became the driver foundation for a full graduation project — a [fingerprint-based biometric access control system](https://github.com/mohamedSamehMS/Fingerprint-Security-Control-System).
 
 
 If you're new to this repo: this is **driver-level code**, not a full application. It's the layer that sits between raw AVR registers and whatever product you're building — it doesn't know or care what the end application does; it just gives you a clean, tested API to talk to timers, communication buses, and common external components (displays, memory, sensors, motors).
@@ -49,7 +49,7 @@ All pin assignments above are **defaults** set in each module's `_CONFIG.h` — 
 
 ## 3. Where this fits (application-layer context)
 
-This library doesn't include an application layer — it's intentionally kept as a standalone, reusable driver set. For an example of a **full product built on top of a driver stack like this one**, see the [Fingerprint-Based Security and Control System](#) — a separate repository where the EEPROM, LCD, Timer1, DIO, and USART drivers were extended and hardened (dynamic sparse-array EEPROM management, Timer1 dual-use for PWM + timekeeping, binary-safe UART framing for a fingerprint sensor) to support a real biometric access-control application with a finite state machine, menu-driven UI, and multi-layered security logic.
+This library doesn't include an application layer — it's intentionally kept as a standalone, reusable driver set. For an example of a **full product built on top of a driver stack like this one**, see the [Fingerprint-Based Security and Control System](https://github.com/mohamedSamehMS/Fingerprint-Security-Control-System) — a separate repository where the EEPROM, LCD, Timer1, DIO, and USART drivers were extended and hardened (dynamic sparse-array EEPROM management, Timer1 dual-use for PWM + timekeeping, binary-safe UART framing for a fingerprint sensor) to support a real biometric access-control application with a finite state machine, menu-driven UI, and multi-layered security logic.
 
 ---
 
